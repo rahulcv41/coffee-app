@@ -66,9 +66,9 @@ class Navbar extends Component {
           <a href="#" data-target="mobile-demo" className="sidenav-trigger brown-text"><i className="material-icons">menu</i></a>
           <div className="nav-wrapper">
             <ul id="nav-mobile" className="left hide-on-med-and-down">
-              <li><a className="textColor Home" href="#!">Home</a></li>
-              <li><a className="textColor" href="#!">About us</a></li>
-              <li><a className="textColor" href="#!">Contact us</a></li>
+              <li><Link to="/home" className="textColor Home" >Home</Link></li>
+              <li><Link to="/about"className="textColor" href="#!">About us</Link></li>
+              <li><Link to="/contact" className="textColor" href="#!">Contact us</Link></li>
             </ul>
             <ul id="nav-mobile" className="right">
               <li><a className="textColor store hide-on-med-and-down" href="#!"><i className="material-icons left">store</i>Shop</a></li>

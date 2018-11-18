@@ -17,6 +17,8 @@ import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 /**
  * Global style space
  */
+import json_data from "./model/data.json";
+
 import "./index.css";
 
 /**
@@ -25,24 +27,42 @@ import "./index.css";
 import Home from "./Components/App-Home/Home";
 import About from "./Components/App-About/About";
 import Cart from "./Components/App-Cart/Cart";
-
+import Navbar from "./Components/App-Navbar/Navbar";
 /**
  * App init
  */
 const App = () => {
+
+    // super(props)
+    this.state = {
+      data: json_data,
+      cart: []
+    };
+  
+
+  handleCartData = (data) => {
+    this.setState({
+      cart: [...this.state.cart, data]
+    })
+  }
+
   return (
     <BrowserRouter>
       <Fragment>
-        <div>
+        {/* <div>
           <Link to="/">Home</Link>
           <Link to="/home">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/cart">Cart</Link>
-        </div>
+        </div> */}
+                <Navbar logo="Coffee" fixed="true" cartData={this.state.cart}/>
+
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+
           <Route path="/cart" component={Cart} />
         </Switch>
       </Fragment>

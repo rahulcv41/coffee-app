@@ -1,0 +1,33 @@
+{
+	"data": [{
+			"name": "coffee1",
+			"image": "prod1.jpg",
+			"description": "description here...",
+			"price": "400",
+			"offerprice": "400"
+		},
+		{
+			"name": "coffee2",
+			"image": "prod1.jpg",
+			"description": "description here...",
+			"price": "400",
+			"offerprice": "400"
+		},
+		{
+			"name": "coffee3",
+			"image": "prod1.jpg",
+			"description": "description here...",
+			"price": "400",
+			"offerprice": "400"
+		},
+		{
+			"name": "coffee3",
+			"image": "prod1.jpg",
+			"description": "description here...",
+			"price": "400",
+			"offerprice": "400"
+		}
+		
+
+	]
+}

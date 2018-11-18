@@ -1,0 +1,56 @@
+.textColor {
+    color: #763606;
+    font-size: 20px;
+
+}
+
+.Home {
+    margin-left: 73px;
+}
+
+.brand-logo {
+    background-color: white !important;
+}
+
+.Cart {
+    margin-Right: 73px;
+}
+
+@media screen and (max-width: 600px) {
+    .Cart {
+        margin-Right: 0px;
+ 
+    }
+    .rmcart{
+        display:none;
+    }
+}
+
+div>.sidenav li>a>i {
+    margin-right: 5px !important;
+}
+
+div>.sidenav li>a {
+    font-weight: 800;
+}
+
+.sidenav-overlay {
+    z-index: 996;
+}
+
+.badge {
+    margin-top: 20px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+@media screen and (max-width: 600px) {
+    .badge {
+        margin-top: 18px;
+
+    }
+}
+
+.badge:after {
+    content: '' !important;
+}
